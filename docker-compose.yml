@@ -1,11 +1,11 @@
 version: '3.7'
 
 services:
-  main:
+  hi-gear-back:
     container_name: hi-gear-back
     build:
       context: .
-      target: development
+      target: ${NODE_ENV}
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
@@ -15,5 +15,3 @@ services:
     command: npm run start:dev
     env_file:
       - .env
-
-

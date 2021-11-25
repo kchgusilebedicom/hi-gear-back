@@ -1,5 +1,5 @@
 import { Controller, Get, Param } from '@nestjs/common';
-import { articles } from 'src/data/articles';
+import { TestArticle } from 'src/data/articles';
 import { IArticle } from './article.model';
 
 @Controller('articles')
