@@ -9,6 +9,7 @@ import { article6 } from './article6';
 import { article7 } from './article7';
 import { article8 } from './article8';
 import { article9 } from './article9';
+import { article10 } from './article10';
 
 export const articles: Page[] = [
   article1,
@@ -20,4 +21,5 @@ export const articles: Page[] = [
   article7,
   article8,
   article9,
+  article10,
 ];

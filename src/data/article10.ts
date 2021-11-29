@@ -5,7 +5,7 @@ const articleId = 10;
 
 const makePathLocal = makePath(articleId);
 
-const article10: Page = {
+export const article10: Page = {
   id: articleId,
   headline: 'Детейлинг по методу «Пять шагов»',
   blocks: [
