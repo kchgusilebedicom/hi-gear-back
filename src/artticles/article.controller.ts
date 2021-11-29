@@ -1,11 +1,11 @@
 import { Controller, Get, Param } from '@nestjs/common';
-import { TestArticle } from 'src/data/articles';
-import { IArticle } from './article.model';
+import { articles } from 'src/data/articles';
+
 
 @Controller('articles')
 export class ArticleController {
   @Get(':id')
-  getArticleById(@Param() param): IArticle | null {
+  getArticleById(@Param() param): Page | null {
     const founedArticles = articles.filter((f) => f.id == param.id);
     console.log(founedArticles);
     if (founedArticles.length > 0) return founedArticles[0];
@@ -15,7 +15,7 @@ export class ArticleController {
   }
 
   @Get()
-  getArticles(): IArticle[] {
+  getArticles(): Page[] {
     return articles;
   }
 }
