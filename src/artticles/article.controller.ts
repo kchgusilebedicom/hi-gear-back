@@ -18,4 +18,9 @@ export class ArticleController {
   getArticles(): Page[] {
     return articles;
   }
+
+  @Get("count")
+  getCount(): number {
+    return articles.length;
+  }
 }
