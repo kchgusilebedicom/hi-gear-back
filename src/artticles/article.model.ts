@@ -1,6 +1,7 @@
-import { title } from "process"
+import { title } from 'process';
 
 interface PageElement {
+  title?: string;
   type: 'img' | 'text' | 'bold-text' | 'video';
   content: string; //src для картинок, текст для текста наверно в виде html
 }
@@ -16,7 +17,7 @@ export interface Page {
   headline: string;
   blocks: PageBlock[];
 }
-export  interface Preview {
+export interface Preview {
   title: string;
   description: string;
   preview: string; //src

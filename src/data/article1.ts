@@ -1,8 +1,12 @@
+import { makePath } from 'src/utils';
 import { Page } from '../artticles/article.model';
 
+const articleId = 1;
+
+const makePathLocal = makePath(articleId);
 
 const article1: Page = {
-  id: 1,
+  id: articleId,
   headline: 'Как действуют герметики\nсистемы охлаждения',
   blocks: [
     {
@@ -11,7 +15,7 @@ const article1: Page = {
       elements: [
         {
           type: 'img',
-          content: 'images/hi-gear-2.png',
+          content: makePathLocal(),
         },
       ],
     },
@@ -46,7 +50,7 @@ const article1: Page = {
       elements: [
         {
           type: 'img',
-          content: 'images/hi-gear-3.png',
+          content: makePathLocal(),
         },
         {
           type: 'text',
