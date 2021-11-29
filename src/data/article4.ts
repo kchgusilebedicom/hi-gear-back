@@ -1,5 +1,5 @@
 const article4: Page = {
-  id: 1,
+  id: 4,
   headline: 'Не дай топливу замерзнуть!',
   blocks: [
     {

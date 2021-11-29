@@ -10,7 +10,7 @@ interface PageBlock {
 }
 
 interface Page {
-  id: 1;
+  id: number;
   headline: string;
   blocks: PageBlock[];
 }

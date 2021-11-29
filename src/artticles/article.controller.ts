@@ -1,12 +1,12 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get, Param, Query } from '@nestjs/common';
 import { articles } from 'src/data/articles';
 
 
 @Controller('articles')
 export class ArticleController {
-  @Get(':id')
-  getArticleById(@Param() param): Page | null {
-    const founedArticles = articles.filter((f) => f.id == param.id);
+  @Get()
+  getArticleById(@Query('id') id : number): Page | null {
+    const founedArticles = articles.filter((f) => f.id == id);
     console.log(founedArticles);
     if (founedArticles.length > 0) return founedArticles[0];
     else {
@@ -20,7 +20,7 @@ export class ArticleController {
   }
 
   @Get("count")
-  getCount(): number {
-    return articles.length;
+  getCount(): string {
+    return articles.length.toString();
   }
 }

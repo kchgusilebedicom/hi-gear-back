@@ -1,5 +1,5 @@
 export const article2: Page = {
-  id: 1,
+  id: 2,
   headline: 'Промывка инжектора и форсунок: это легко!',
   blocks: [
     {
