@@ -1,3 +1,6 @@
+import { Page } from '../artticles/article.model';
+
+
 const article1: Page = {
   id: 1,
   headline: 'Как действуют герметики\nсистемы охлаждения',

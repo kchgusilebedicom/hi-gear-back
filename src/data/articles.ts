@@ -1,3 +1,6 @@
+import { Page } from '../artticles/article.model';
+
+
 import { article1 } from './article1';
 import { article2 } from './article2';
 import { article3 } from './article3';

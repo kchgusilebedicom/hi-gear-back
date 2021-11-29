@@ -1,3 +1,5 @@
+import { title } from "process"
+
 interface PageElement {
   type: 'img' | 'text' | 'bold-text' | 'video';
   content: string; //src для картинок, текст для текста наверно в виде html
@@ -9,8 +11,13 @@ interface PageBlock {
   elements: PageElement[];
 }
 
-interface Page {
+export interface Page {
   id: number;
   headline: string;
   blocks: PageBlock[];
+}
+export  interface Preview {
+  title: string;
+  description: string;
+  preview: string; //src
 }

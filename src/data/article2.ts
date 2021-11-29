@@ -1,3 +1,5 @@
+import { Page } from '../artticles/article.model';
+
 export const article2: Page = {
   id: 2,
   headline: 'Промывка инжектора и форсунок: это легко!',

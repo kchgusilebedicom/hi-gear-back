@@ -1,3 +1,6 @@
+import { Page } from '../artticles/article.model';
+import { Page } from '../artticles/article.model';
+
 const article4: Page = {
   id: 4,
   headline: 'Не дай топливу замерзнуть!',

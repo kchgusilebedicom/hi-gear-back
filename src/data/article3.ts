@@ -1,3 +1,5 @@
+import { Page } from '../artticles/article.model';
+
 const article3: Page = {
   id: 3,
   headline: 'Соты за полсотни или экономия на замене катализатора?',
