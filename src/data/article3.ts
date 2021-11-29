@@ -6,7 +6,7 @@ const articleId = 3;
 
 const makePathLocal = makePath(articleId);
 
-const article3: Page = {
+export const article3: Page = {
   id: articleId,
   headline: 'Склеят то, что другим не под силу',
   blocks: [
