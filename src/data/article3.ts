@@ -1,6 +1,16 @@
 import { Page } from '../artticles/article.model';
 
-const article3: Page = {
+const articleId = 8;
+
+const makePath = (article: number) => {
+  let id = 1;
+  return () => {
+    return `images/articles${article}-img${id++}`;
+  };
+};
+const makePathLocal = makePath(articleId);
+
+const article8: Page = {
   id: 3,
   headline: 'Соты за полсотни или экономия на замене катализатора?',
   blocks: [
@@ -9,7 +19,7 @@ const article3: Page = {
       elements: [
         {
           type: 'img',
-          content: 'images/article3-img1.png',
+          content: makePathLocal(),
         },
       ],
     },
@@ -39,7 +49,7 @@ const article3: Page = {
       elements: [
         {
           type: 'img',
-          content: 'images/article3-img2.png',
+          content: makePathLocal(),
         },
       ],
     },
@@ -58,11 +68,12 @@ const article3: Page = {
       elements: [
         {
           type: 'img',
-          content: 'images/article3-img3.png',
+          content: makePathLocal(),
         },
       ],
     },
   ],
 };
+console.log(article8);
 
-export { article3 };
+export { article8 as article3 };
