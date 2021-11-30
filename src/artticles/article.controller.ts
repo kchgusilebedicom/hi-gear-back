@@ -23,6 +23,7 @@ export class ArticleController {
   getPreviews(): Preview[] {
     const previews = articles.map((value): Preview => {
       const preview: Preview = {
+        id: value.id,
         title: value.headline,
         description: value.blocks[0].title,
         preview: value.blocks[0].elements[0].content,

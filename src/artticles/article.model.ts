@@ -18,6 +18,7 @@ export interface Page {
   blocks: PageBlock[];
 }
 export interface Preview {
+  id: number;
   title: string;
   description: string;
   preview: string; //src
