@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { html, makePath } from 'src/utils';
 import { Page } from '../artticles/article.model';
 
@@ -7,6 +8,7 @@ const makePathLocal = makePath(articleId);
 
 export const article2: Page = {
   id: articleId,
+  videos: ['https://youtu.be/B0N01cbPEKE',	'https://youtu.be/gI_TsNBF0IA',	'https://youtu.be/JWFEUk2zRvs'],
   headline: 'Как победить трение',
   blocks: [
     {

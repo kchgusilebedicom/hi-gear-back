@@ -9,6 +9,7 @@ const makePathLocal = makePath(articleId);
 
 const article1: Page = {
   id: articleId,
+  videos: ['https://youtu.be/B0N01cbPEKE',	'https://youtu.be/gI_TsNBF0IA',	'https://youtu.be/JWFEUk2zRvs'],
   headline: html`Как действуют герметики<br /><span class="red"
       >системы охлаждения</span
     >`,

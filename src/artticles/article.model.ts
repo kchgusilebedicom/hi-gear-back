@@ -16,6 +16,8 @@ export interface Page {
   id: number;
   headline: string;
   blocks: PageBlock[];
+
+  videos: string[];
 }
 export interface Preview {
   id: number;

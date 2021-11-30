@@ -8,6 +8,11 @@ const makePathLocal = makePath(articleId);
 export const article4: Page = {
   id: articleId,
   headline: 'Красный, желтый, зеленый — как правильно выбрать антифриз',
+  videos: [
+    'https://youtu.be/B0N01cbPEKE',
+    'https://youtu.be/gI_TsNBF0IA',
+    'https://youtu.be/JWFEUk2zRvs',
+  ],
   blocks: [
     {
       title:

@@ -7,6 +7,11 @@ const makePathLocal = makePath(articleId);
 
 export const article6: Page = {
   id: articleId,
+  videos: [
+    'https://youtu.be/B0N01cbPEKE',
+    'https://youtu.be/gI_TsNBF0IA',
+    'https://youtu.be/JWFEUk2zRvs',
+  ],
   headline: 'Аэрозольные смазки: для чего и как их применять',
   blocks: [
     {

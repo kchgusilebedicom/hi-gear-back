@@ -7,6 +7,11 @@ const makePathLocal = makePath(articleId);
 
 const article8: Page = {
   id: articleId,
+  videos: [
+    'https://youtu.be/B0N01cbPEKE',
+    'https://youtu.be/gI_TsNBF0IA',
+    'https://youtu.be/JWFEUk2zRvs',
+  ],
   headline: 'Соты за полсотни или экономия на замене катализатора?',
   blocks: [
     {

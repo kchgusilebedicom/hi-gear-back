@@ -7,6 +7,11 @@ const makePathLocal = makePath(articleId);
 
 export const article10: Page = {
   id: articleId,
+  videos: [
+    'https://youtu.be/B0N01cbPEKE',
+    'https://youtu.be/gI_TsNBF0IA',
+    'https://youtu.be/JWFEUk2zRvs',
+  ],
   headline: 'Детейлинг по методу «Пять шагов»',
   blocks: [
     {

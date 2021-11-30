@@ -7,6 +7,11 @@ const makePathLocal = makePath(articleId);
 
 export const article9: Page = {
   id: 9,
+  videos: [
+    'https://youtu.be/B0N01cbPEKE',
+    'https://youtu.be/gI_TsNBF0IA',
+    'https://youtu.be/JWFEUk2zRvs',
+  ],
   headline: 'Промывка инжектора и форсунок: это легко!',
   blocks: [
     {
