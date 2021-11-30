@@ -152,7 +152,7 @@ const article1: Page = {
       elements: [
         {
           type: 'video',
-          content: '',
+          content: 'https://youtu.be/B0N01cbPEKE',
         },
       ],
     },
