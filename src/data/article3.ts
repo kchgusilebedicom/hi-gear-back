@@ -8,7 +8,7 @@ const makePathLocal = makePath(articleId);
 
 export const article3: Page = {
   id: articleId,
-  videos: ['https://youtu.be/B0N01cbPEKE',	'https://youtu.be/gI_TsNBF0IA',	'https://youtu.be/JWFEUk2zRvs'],
+  videos: ['https://youtu.be/OldQ01Uhe9U','https://youtu.be/dEhyQ9aHah4','https://youtu.be/aAgozvdRBfs','https://youtu.be/9kbmRKLd_AM'],
   headline: 'Склеят то, что другим не под силу',
   blocks: [
     {
